@@ -1,0 +1,10 @@
+/* GMAE PAGE CSS
+style.css */
+
+#container{
+    text-align: center;
+}
+#canvas{
+    background-color: #D3D3D3;
+    border: 10px solid green;
+}

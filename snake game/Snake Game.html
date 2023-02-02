@@ -1,0 +1,50 @@
+<!-- FRONT PAGE -->
+<!-- Snake Game.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="Snake_Game.css">
+</head>
+<body>
+<center>
+    <div name="outerbox" id="outerbox" class="outerbox">
+        <br><br>
+        <br><br><label id="intro" class="intro">Snake Game<br><br></label>
+            <label class="container">EASY
+              <input type="radio" id="easy" name="speed" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">MEDIUM
+              <input type="radio" id="medium" name="speed">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">HARD
+              <input type="radio" id="hard" name="speed">
+              <span class="checkmark"></span>
+            </label>
+          <br><br>
+        <button class="button" id="start" onclick="chekcSubmitType()">START</button>
+        <script type="text/javascript">
+          function chekcSubmitType()
+{
+    if(document.getElementById('easy').checked)
+    {
+        window.location="game_easy.html"; 
+    }
+    else if(document.getElementById('medium').checked)
+    {
+         window.location="game_medium.html";
+    }
+    else if(document.getElementById('hard').checked)
+    {
+         window.location="game_hard.html";
+    }
+
+}
+      </script>
+    </div>
+</center>
+</body>
+</html>
